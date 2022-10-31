@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head.ejs") %>
+    <link rel="stylesheet" href="/styles/post-detail.css" />
+    <link rel="stylesheet" href="/styles/comments.css" />
+    <script src="/scripts/comments.js" defer></script>
+    <title>Post Title</title>
+  </head>
+  <body>
+    <header id="main-header"><%- include("includes/header.ejs") %></header>
+    <main>
+      <h1><%= post.title %></h1>
+      <section id="post-meta">
+        <address>
+          <a href="mailto:<%=post.email%>"><%= post.author.name %></a>
+        </address>
+        | <time datetime="<%= post.date %>"><%= post.humanReadableDate %></time>
+        <hr />
+        <%= post.body %>
+        <hr />
+      </section>
+      <section id="comments">
+        <p></p>
+        <button class="btn" id="comments-btn" data-postid="<%=post._id%>">
+          Load Comments
+        </button>
+      </section>
+      <hr />
+      <section class="create-comment-form">
+        <h2>Leave a comment</h2>
+        <form data-postid="<%=post._id%>">
+          <div class="form-control">
+            <label for="title">Comment Title</label>
+            <input type="text" id="title" name="title" name="" />
+          </div>
+          <div class="form-control">
+            <label for="text">Your Comment</label>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+          </div>
+          <button class="btn">Post Comment</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

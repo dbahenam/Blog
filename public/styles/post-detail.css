@@ -1,0 +1,24 @@
+main {
+  margin: 4rem;
+}
+main h1 {
+  text-align: left;
+}
+#post-meta {
+  width: 30rem;
+}
+
+#post-meta address {
+  display: inline-block;
+}
+#post-meta address a {
+  text-decoration: none;
+  color: rgb(53, 20, 117);
+}
+#post-meta time {
+  color: rgb(102, 102, 102);
+  font-style: italic;
+}
+hr {
+  margin: 0.5rem 0;
+}

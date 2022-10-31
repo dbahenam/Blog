@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head.ejs") %>
+    <link rel="stylesheet" href="/styles/post-item.css" />
+    <title>Post List</title>
+  </head>
+  <body>
+    <header id="main-header"><%- include("includes/header.ejs") %></header>
+    <main>
+      <h1>All Posts</h1>
+      <% if(!posts || posts.length === 0) { %>
+      <section id="post-item">
+        <h3>No posts found 😢</h3>
+        <a href="/new-post">Want to add a post?</a>
+      </section>
+
+      <% }else{ %> <% for(post of posts){ %>
+      <%-include("includes/post-item.ejs", {post: post}) %> <%}%> <% } %>
+    </main>
+  </body>
+</html>

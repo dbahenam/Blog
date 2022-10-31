@@ -1,0 +1,39 @@
+.create-comment-form,
+.comment-item {
+  margin: 1rem auto;
+  padding: 0.25rem 0.75rem;
+  width: 30rem;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: inherit;
+}
+.comment-item {
+  text-align: center;
+}
+ol {
+  margin: 0;
+  padding: 0;
+}
+.create-comment-form form {
+  font-family: inherit;
+}
+.form-control {
+  margin-bottom: 0.5rem;
+}
+.form-control label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.form-control input,
+textarea {
+  width: 80%;
+  padding: 0.5rem;
+}
+.form-control textarea {
+  resize: none;
+}
+.btn {
+  margin-bottom: 0.5rem;
+}

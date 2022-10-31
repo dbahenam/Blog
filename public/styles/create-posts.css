@@ -1,0 +1,20 @@
+form {
+  width: 30rem;
+  margin: 2rem auto;
+}
+label {
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font: inherit;
+}
+textarea {
+  resize: none;
+}
+.form-control {
+  margin: 0.5rem 0;
+}

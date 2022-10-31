@@ -1,0 +1,12 @@
+<section id="post-item">
+  <h3><%= post.title %></h3>
+  <p id="summary">By <%= post.author.name %></p>
+  <p><%= post.summary %></p>
+  <div class="post-actions">
+    <form action="/post/<%=post._id%>/delete" method="POST">
+      <button type="submit" class="btn-alt">Delete Post</button>
+    </form>
+    <a href="/post/<%=post._id%>/edit">Edit Post</a>
+    <a href="/post/<%=post._id%>">View Post</a>
+  </div>
+</section>
