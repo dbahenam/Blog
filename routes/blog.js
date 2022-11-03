@@ -7,9 +7,9 @@ const router = express.Router();
 const db = require('../data/database');
 const ObjectId = mongodb.ObjectId;
 
-router.get('/', async function (req, res) {
-  res.redirect('/posts');
-});
+// router.get('/', async function (req, res) {
+//   res.redirect('/posts');
+// });
 
 router.get('/posts', async function (req, res) {
   //   console.log("made it to get route posts");

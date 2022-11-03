@@ -1,5 +1,5 @@
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   margin: 0;
@@ -22,6 +22,10 @@ main h1 {
 #main-header ul {
   display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 #main-header ul li {
   margin: 0 2rem;
@@ -45,4 +49,18 @@ main h1 {
 .btn:hover {
   cursor: pointer;
   background-color: rgb(123, 73, 224);
+}
+
+.btn-logout {
+  color: white;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0 2rem;
+}
+
+.btn-logout:hover {
+  cursor: pointer;
 }
